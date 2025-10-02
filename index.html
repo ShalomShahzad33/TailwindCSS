@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practicing Tailwind</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header class="sticky top-0 h-24 bg-blue-800 shadow-xl">
+      <nav
+        class="flex h-full w-full items-center justify-between px-4 py-2 text-white"
+      >
+        <h1 class="text-5xl md:text-6xl">Logo</h1>
+        <div>
+          <svg
+            viewBox="0 0 100 80"
+            width="40"
+            height="40"
+            fill="white"
+            class="block w-12 sm:hidden"
+            id="hamburger"
+          >
+            <rect width="80" height="10" rx="10"></rect>
+            <rect rect y="30" width="80" height="10" rx="10"></rect>
+            <rect y="60" width="80" height="10" rx="10"></rect>
+          </svg>
+          <svg
+            width="40"
+            height="40"
+            viewBox="0 0 20 20"
+            fill="white"
+            xmlns="http://www.w3.org/2000/svg"
+            class="hidden sm:hidden"
+            id="close"
+          >
+            <path
+              d="M5 5L15 15M5 15L15 5"
+              stroke="black"
+              stroke-width="4"
+              stroke-linecap="round"
+            />
+          </svg>
+        </div>
+        <ul
+          class="hidden text-lg sm:flex sm:gap-8 sm:text-xl md:gap-20 md:text-2xl"
+          id=""
+        >
+          <li class="nav-link">
+            <a href="#">Home</a>
+          </li>
+          <li class="nav-link">
+            <a href="#about">About</a>
+          </li>
+          <li class="nav-link">
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+        <ul
+          class="absolute right-0 top-24 hidden h-72 w-32 flex-col items-center gap-8 bg-blue-600 text-2xl sm:hidden"
+          id="nav-items"
+        >
+          <li class="nav-link">
+            <a href="#">Home</a>
+          </li>
+          <li class="nav-link">
+            <a href="#about">About</a>
+          </li>
+          <li class="nav-link">
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section
+        class="hero flex h-screen w-full flex-col items-center justify-center gap-8 bg-blue-950 text-white"
+      >
+        <h1 class="split text-center text-6xl sm:text-7xl lg:text-8xl">
+          <span class="font-bold transition-all hover:text-blue-500"
+            >Welcome</span
+          >
+          to my website
+        </h1>
+        <p class="group text-center text-base sm:text-xl lg:text-2xl">
+          <span
+            class="transition-all group-hover:font-semibold group-hover:text-green-800"
+            >Lorem</span
+          >, ipsum dolor sit amet consectetur adipisicing elit. Distinctio minus
+          velit repudiandae dolor, mollitia, pariatur
+          <span
+            class="transition-all group-hover:font-semibold group-hover:text-red-800"
+            >harum error vitae sint</span
+          >
+          quae, maiores
+          <span
+            class="transition-all group-hover:font-semibold group-hover:text-purple-800"
+            >neque voluptatum?</span
+          >
+          Reiciendis, expedita. Earum ab cumque vitae quaerat repellat
+          excepturi, et sint.
+        </p>
+        <div class="buttons flex flex-col gap-4 sm:flex-row sm:gap-8">
+          <button
+            class="h-12 bg-blue-500 px-4 text-center transition-all hover:rounded-md hover:bg-blue-600 sm:w-32"
+          >
+            Read More
+          </button>
+          <button class="h-12 border px-4 text-center sm:w-32">Click Me</button>
+        </div>
+      </section>
+
+      <section
+        id="services-main"
+        class="grid h-[80vh] grid-cols-1 gap-4 bg-slate-950 p-4 text-white sm:grid-cols-2"
+      >
+        <div
+          id="right"
+          class="group flex flex-col items-center justify-center gap-2 rounded bg-slate-700 p-4 transition-all hover:scale-105 sm:row-span-2"
+        >
+          <img
+            src="./src/avatar1.jpg"
+            alt="avatar1"
+            class="inline h-28 w-28 rounded-full object-cover object-top"
+          />
+          <h1 class="transi text-4xl transition-all group-hover:text-blue-500">
+            John Doe
+          </h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+            ducimus architecto quis officia culpa magnam delectus impedit harum
+            id assumenda tenetur, minima, nemo odio placeat tempore eum quos
+            alias maxime?
+          </p>
+        </div>
+        <div id="left-top" class="rounded bg-slate-700"></div>
+        <div id="left-bottom" class="rounded bg-slate-700"></div>
+      </section>
+    </main>
+
+    <script src="./src/main.js"></script>
+  </body>
+</html>
