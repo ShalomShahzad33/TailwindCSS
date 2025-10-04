@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
-    <header class="sticky top-0 h-24 bg-blue-800 shadow-xl">
+    <header class="sticky top-0 z-50 h-24 bg-blue-800 shadow-xl">
       <nav
         class="flex h-full w-full items-center justify-between px-4 py-2 text-white"
       >
@@ -112,30 +112,43 @@
       </section>
 
       <section
-        id="services-main"
-        class="grid h-[80vh] grid-cols-1 gap-4 bg-slate-950 p-4 text-white sm:grid-cols-2"
+        id="testamonials-main"
+        class="grid h-auto grid-cols-1 gap-4 bg-slate-950 p-4 text-white sm:grid-cols-2"
       >
-        <div
-          id="right"
-          class="group flex flex-col items-center justify-center gap-2 rounded bg-slate-700 p-4 transition-all hover:scale-105 sm:row-span-2"
-        >
+        <div id="right" class="testamonial-main group sm:row-span-2 sm:gap-8">
           <img
             src="./src/avatar1.jpg"
             alt="avatar1"
-            class="inline h-28 w-28 rounded-full object-cover object-top"
+            class="testamonial-image"
           />
-          <h1 class="transi text-4xl transition-all group-hover:text-blue-500">
-            John Doe
-          </h1>
-          <p>
+          <h1 class="testamonial-heading">John Doe</h1>
+          <p class="testamonial-paragraph">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
             ducimus architecto quis officia culpa magnam delectus impedit harum
             id assumenda tenetur, minima, nemo odio placeat tempore eum quos
             alias maxime?
           </p>
         </div>
-        <div id="left-top" class="rounded bg-slate-700"></div>
-        <div id="left-bottom" class="rounded bg-slate-700"></div>
+        <div id="left-top" class="testamonial-main group">
+          <img src="./src/avatar2.jpg" alt="img2" class="testamonial-image" />
+          <h1 class="testamonial-heading">Mark Stephen</h1>
+          <p class="testamonial-paragraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
+            asperiores quos, sunt nemo eius consequatur maxime recusandae quia
+            odio sequi quae distinctio laudantium in corrupti natus. Earum
+            fugiat eos esse.
+          </p>
+        </div>
+        <div id="left-bottom" class="testamonial-main group">
+          <img src="./src/avatar3.jpg" alt="img3" class="testamonial-image" />
+          <h1 class="testamonial-heading">Mark Stephen</h1>
+          <p class="testamonial-paragraph">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
+            asperiores quos, sunt nemo eius consequatur maxime recusandae quia
+            odio sequi quae distinctio laudantium in corrupti natus. Earum
+            fugiat eos esse.
+          </p>
+        </div>
       </section>
     </main>
 

@@ -5,3 +5,19 @@
 .nav-link {
   @apply transition-all hover:text-blue-950 hover:underline;
 }
+
+.testamonial-main {
+  @apply flex flex-col items-center justify-center gap-2 rounded bg-slate-700 p-4 transition-all hover:scale-105;
+}
+
+.testamonial-image {
+  @apply inline h-28 w-28 rounded-full object-cover object-top;
+}
+
+.testamonial-heading {
+  @apply text-4xl transition-all group-hover:text-blue-500;
+}
+
+.testamonial-paragraph {
+  @apply sm:mb-6 md:mb-11 md:text-lg;
+}
