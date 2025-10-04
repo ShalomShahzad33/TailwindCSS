@@ -21,3 +21,7 @@
 .testamonial-paragraph {
   @apply sm:mb-6 md:mb-11 md:text-lg;
 }
+
+.card {
+  @apply flex h-auto flex-col items-center justify-center gap-4 rounded-lg bg-white p-6 transition-all hover:scale-105 hover:shadow-2xl md:w-1/3;
+}

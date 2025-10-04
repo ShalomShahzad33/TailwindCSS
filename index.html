@@ -103,11 +103,15 @@
         </p>
         <div class="buttons flex flex-col gap-4 sm:flex-row sm:gap-8">
           <button
-            class="h-12 bg-blue-500 px-4 text-center transition-all hover:rounded-md hover:bg-blue-600 sm:w-32"
+            class="h-12 bg-blue-500 px-4 text-center transition-all hover:animate-pulse hover:rounded-md hover:bg-blue-600 sm:w-32"
           >
             Read More
           </button>
-          <button class="h-12 border px-4 text-center sm:w-32">Click Me</button>
+          <button
+            class="h-12 border px-4 text-center hover:animate-pulse sm:w-32"
+          >
+            Click Me
+          </button>
         </div>
       </section>
 
@@ -115,7 +119,10 @@
         id="testamonials-main"
         class="grid h-auto grid-cols-1 gap-4 bg-slate-950 p-4 text-white sm:grid-cols-2"
       >
-        <div id="right" class="testamonial-main group sm:row-span-2 sm:gap-8">
+        <div
+          id="right"
+          class="testamonial-main group sm:row-span-2 sm:gap-8 sm:p-6 md:p-8"
+        >
           <img
             src="./src/avatar1.jpg"
             alt="avatar1"
@@ -150,7 +157,76 @@
           </p>
         </div>
       </section>
+
+      <div
+        id="services"
+        class="relative flex flex-wrap items-center justify-center gap-4 bg-blue-900 p-4"
+      >
+        <div class="card">
+          <img src="./src/coding.svg" alt="coding" class="size-32" />
+          <h1 class="text-2xl">Software Development</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+            tenetur labore rerum enim, accusamus consectetur dicta maxime
+            maiores ut tempore? Voluptate laboriosam quos facilis nesciunt ipsa
+            est assumenda asperiores accusamus.
+          </p>
+          <button
+            class="h-12 bg-blue-500 px-4 text-center text-white transition-all hover:rounded-md hover:bg-blue-600 sm:w-32"
+          >
+            Read More
+          </button>
+        </div>
+
+        <div class="card">
+          <img src="./src/computer.svg" alt="coding" class="size-32" />
+          <h1 class="text-2xl">Graphics Designing</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+            tenetur labore rerum enim, accusamus consectetur dicta maxime
+            maiores ut tempore? Voluptate laboriosam quos facilis nesciunt ipsa
+            est assumenda asperiores accusamus.
+          </p>
+          <button
+            class="h-12 bg-blue-500 px-4 text-center text-white transition-all hover:rounded-md hover:bg-blue-600 sm:w-32"
+          >
+            Read More
+          </button>
+        </div>
+        <div class="card">
+          <img src="./src/website.svg" alt="coding" class="size-32" />
+          <h1 class="text-2xl">Website Development</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+            tenetur labore rerum enim, accusamus consectetur dicta maxime
+            maiores ut tempore? Voluptate laboriosam quos facilis nesciunt ipsa
+            est assumenda asperiores accusamus.
+          </p>
+          <button
+            class="h-12 bg-blue-500 px-4 text-center text-white transition-all hover:rounded-md hover:bg-blue-600 sm:w-32"
+          >
+            Read More
+          </button>
+        </div>
+        <div class="card">
+          <img src="./src/cloud.svg" alt="coding" class="size-32" />
+          <h1 class="text-2xl">Cloud Deployment</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+            tenetur labore rerum enim, accusamus consectetur dicta maxime
+            maiores ut tempore? Voluptate laboriosam quos facilis nesciunt ipsa
+            est assumenda asperiores accusamus.
+          </p>
+          <button
+            class="h-12 bg-blue-500 px-4 text-center text-white transition-all hover:rounded-md hover:bg-blue-600 sm:w-32"
+          >
+            Read More
+          </button>
+        </div>
+      </div>
     </main>
+
+    <footer>This is the footer of the Site</footer>
 
     <script src="./src/main.js"></script>
   </body>
